@@ -27,18 +27,19 @@ function App() {
       setLoading(false);
     }
   };
-  <ChatHistory history={history} />;
 
   return (
     <div style={{ maxWidth: "600px", margin: "auto", textAlign: "center" }}>
       <h1>AI Prompt App</h1>
-
-      <PromptInput onSubmit={handlePromptSubmit} loading={loading} />
-      <button onClick={() => setResponse("")}>Clear</button>
+      <PromptInput
+        onSubmit={handlePromptSubmit}
+        loading={loading}
+        setResponse={setResponse}
+      />
 
       {loading && <p>Generating response...</p>}
-
       <ResponseDisplay response={response} error={error} />
+      <ChatHistory history={history} />
     </div>
   );
 }

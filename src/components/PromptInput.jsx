@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PromptInput({ onSubmit, loading }) {
+function PromptInput({ onSubmit, loading, setResponse }) {
   const [input, setInput] = useState("");
 
   const handleSubmit = () => {
@@ -21,6 +21,15 @@ function PromptInput({ onSubmit, loading }) {
 
       <button onClick={handleSubmit} disabled={loading}>
         {loading ? "Loading..." : "Submit"}
+      </button>
+
+      <button
+        onClick={() => {
+          setInput("");
+          setResponse("");
+        }}
+      >
+        Clear
       </button>
     </div>
   );

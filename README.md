@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). There's a combination of React.jsx and JavaScript.js being used.
 
 ## Available Scripts
 
@@ -17,7 +17,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://create-react-app.dev/docs/running-tests/) for more information.
 
 ### `npm run build`
 
@@ -27,11 +27,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://create-react-app.dev/docs/deployment/) for more information.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -39,42 +39,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-//
-
 # AI Prompt App
 
 ## Overview
 
-This is a React-based web application that allows users to input prompts, send them to an AI API, and display responses dynamically.
+This is a React-based web application that allows users to input prompts, send them to an AI API, and display responses dynamically. A chat history is built to save user prompts and responses.
 
 ## Features
 
@@ -87,32 +56,23 @@ This is a React-based web application that allows users to input prompts, send t
 ## Tech Stack
 
 - React
-- OpenAI API
+- OpenRouter API
 
 ## Setup
 
 1. Clone repo
 2. Run:
-   npm install
+   `npm install`
 3. Add `.env`:
-   REACT_APP_OPENAI_API_KEY=your_api_key
+   REACT_APP_OPENROUTER_API_KEY=your_api_key
+   **Note:** To locate the api key, you want to go to open router url and create a new key, then update the `.env` file appropriately.
 4. Start:
-   npm start
+   `npm start`
 
 ## Notes
 
-This project was built as part of a frontend technical assessment.
+This project was built as part of a frontend technical assessment for Spotnana.
 
 ## API Used
 
-This app uses the Hugging Face Inference API for generating AI responses.
-
-Model used:
-
-- google/flan-t5-large
-
-## Environment Variables
-
-Create a `.env` file:
-
-REACT_APP_HF_API_KEY=your_token_here
+This app uses the Open Router API for generating AI responses.

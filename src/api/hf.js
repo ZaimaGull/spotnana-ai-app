@@ -6,7 +6,7 @@ export async function fetchAIResponse(prompt) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
+          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
         },
         body: JSON.stringify({
           inputs: prompt,
