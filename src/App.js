@@ -1,10 +1,8 @@
 import { useState } from "react";
 import PromptInput from "./components/PromptInput";
 import ResponseDisplay from "./components/ResponseDisplay";
-//import { fetchAIResponse } from "./api/openai";
 import ChatHistory from "./components/ChatHistory";
-//import { fetchAIResponse } from "./api/hf";
-import { fetchAIResponse } from "./api/openrouter";
+import { fetchAIResponse } from "./api/generate";
 function App() {
   const [response, setResponse] = useState("");
   const [error, setError] = useState("");
